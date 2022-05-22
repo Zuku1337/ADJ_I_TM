@@ -1,4 +1,13 @@
-import pandas
+import nltk
 
-def test():
-    print('lol')
+
+from WordCloudVisualizer import visual as wordcloud_visualizer
+from Classification import visual as classifications_visualizer
+
+nltk.download('stopwords')
+nltk.download('punkt')
+
+wordcloud_visualizer()
+classifications_visualizer()
+
+
